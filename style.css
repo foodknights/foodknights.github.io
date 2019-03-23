@@ -1,0 +1,130 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;    
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    
+    scroll-snap-type: y mandatory;
+
+}
+
+
+#navbar{
+    display: flex;
+    background-color:rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    top: 0;
+    border: solid black 2px;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+}
+
+#navbar ul{
+    display: flex;
+     
+    list-style: none;
+    width:100%;
+    justify-content: center;   
+}
+
+.navbar-items{
+    margin: 3px;
+    padding: 1rem;
+}
+
+
+.navbar-items {
+    
+    font-size: 30px;
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.navbar-items:hover{
+    color: skyblue;
+}
+
+#pages{
+    display: flex;
+    flex-direction: column;
+}
+
+#home{
+    background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('images/food1.jpg') center center/cover no-repeat ; 
+}
+#blog{
+    background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)),url('images/blog2.jpg') center center/cover no-repeat ; 
+}
+#about{
+    background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)),url('images/food2.jpg') center center/cover no-repeat ; 
+}
+#contact{
+    background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)),url('images/contact1.jpg') center  no-repeat ; 
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    opacity: 1;
+    scroll-snap-align: center;
+}
+
+.heading{
+    font-family: 'Chewy', cursive;
+    font-size: 5em;
+    text-align: center;
+    opacity: 1;
+    
+    text-shadow: black 6px 6px; ;
+}
+p{
+    font-size:2em;
+    margin: 50px;
+    text-align: center ;
+    
+}
+.button-blog-link {
+    border: none;
+    text-decoration: none;
+    background: black;
+    color: #ffffff ;
+    font-weight: bold;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.button-blog-link:hover {
+    color: black ;
+    background:white;
+    font-weight: 700;
+    letter-spacing: 3px;
+    
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.6s ease 0s;
+    }
