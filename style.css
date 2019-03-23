@@ -100,7 +100,7 @@ body{
     
     text-shadow: black 6px 6px; 
 }
-@media (max-width:750px){
+@media (max-width:1210px){
     .heading{
         font-size: 3em;
     }
