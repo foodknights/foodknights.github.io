@@ -98,8 +98,16 @@ body{
     text-align: center;
     opacity: 1;
     
-    text-shadow: black 6px 6px; ;
+    text-shadow: black 6px 6px; 
 }
+@media (max-width:750px){
+    .heading{
+        font-size: 3em;
+    }
+    p{
+        font-size: 1em;
+    }
+} 
 p{
     font-size:2em;
     margin: 50px;
